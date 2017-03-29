@@ -1,0 +1,41 @@
+div {
+    width:100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s;
+
+}
+div:hover{
+  width:500px;
+}
+h1{
+  font-size:22px;
+  color:blue;
+  transition: font-size 3s ease-in 2s,color 3s ease-out 2s;
+}
+h1:hover{
+  transition: all 3s ease-in-out;
+  cursor:crosshair;
+  font-size:35px;
+  color:green;
+}
+img{
+  width:300px;
+  height:350px;
+  transition: ease-out;
+}
+img:hover{
+  width: auto;
+  height: auto;
+}
+@keyframes color {
+  from{background-color: blue;}
+  to{background-color:red;}
+}
+p{
+  width:800px;
+  height:100px;
+  background-color:blue;
+  animation-name:color;
+  animation-duration:5s;
+}
